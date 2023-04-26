@@ -1,0 +1,33 @@
+sv_public 1
+hostname "⚡⚡ Extreme Voltage ⚡⚡ - http://extreme.voltage.nz"
+//g_maplist "revdm3pro curse_v2 spaceapple bloodrun quark toxic_fabric deck_v2 romi stone_sea revolter limbo tuhma revrem thehighestground epsilon-b5 resist-desaturation Fjo3tourney2_nex_r1 79drgc2 Bal3dm4_nex_r1 CMP1-dm6 acid3dm5 af3hex aggressor_remix ame7q3dm3 ascension bal3dm5 bloodyrun chiropteradm_nex_r1"
+g_maplist "79drdm5_beta2 79drgc2 Bal3dm4_nex_r1 CMP1-dm6 Fjo3tourney2_nex_r1 GreatDivide-X LC_Iceworld The_Yard Xtinyworld abandoned abbey_ut above abyss acid3dm10_q3 acid3dm2_q3 acid3dm5 acid3dm6_q3 acid3dm7_q3 acid3dm8_q3 aedesert aepyra aerowalk aerowalk_z3 aether_pre2 af3hex aggressor_remix aggressorx_wz_04 almostlost_ql ame7q3dm3 aneurysm_itemfix anteroombb_wop arcanecitadel_full ascension assispace_v6 asylum_full atomforge aty3dm6_q3 aty3dm9msc2013_q3 aviation azalea badassdm1_q3 bal3dm5 barenaV1 basesiege_ql battleforged_ql beyondreality_ql blockscape-inverted blockscape bloodlust_q3w1 bloodprison_xon_r2 bloodrun bloodrun_a3 bloodrunintel_ql bm breath_b7 breathium brimstoneabbey_ql broccoli_v1 bump c-fun-v1r1 ca-tamb cabaret campgrounds_beta3 canal cannedheat_ql castle-beta2 chaos charon3dm13 chemicalreaction_ql chess city_new-york_melano3 cliffside_xon coitus_interuptus_cpm2 coldwar_ql cores_v1r7 corrosion_ql cpm10_nex_r1 cpm14 cpm15 cpm16_nex_r1 cpm17 cpm19 cpm1a_nex_r1 cpm20 cpm24_nex_r1 cpm29_nex_r1 cpm7 crescent_q3 crucible ct3dm5 ctctf3_nex_r1 cube-arena cubes-x03-r02 cucumber_v3r1 cupolaarena1 cure_full_r2 curse_v2 deck_v2 dastower40 dc_map02_q3 deadandgone_ql deathorglory_ql deck16_1 demonkeep_ql desertcastles_full_vehicles desertfactory_v1 devilish_full dieselpower dismal dismemberment_ql dissocia distonic divineintermission_ql dm3-space_q3 dm3dm17_q3 dm_jungo dm_nexdm3 dmp11_q3 dmp14_q3 dna dntfsanta docs_cyber_core_insta downer_final_r1 dreadfulplace_ql dredwerkz_retex drunkenmummy_ql dsi dubneoc dusty_v2r1 eggandbacon_nex encore encore_b1 epsilon-b5 equinox_v1r4 evil_17 evilspace2 evilspace_deepsky_v1r2 evilspace_nex evilspace_r1 evilspaceremix farewell_laserfun fickle-ctf fisume_v2 foolish_legacy_cpm21 fortsntowerassault fr3dm1_nex_r1 fragcity frankishtower2 frosthalo_b3 furiousheights_full gasoline_02 gasoline_3teams_02 gasoline_4teams_02 gasoline_noteams_02 geo-core graphite_b2 greatwall_revisited_b2r2_melano4 grimdungeons_ql hal_palindrome heart_v2 hellsgateredux_ql hiddenfortress_full_q3 hub3aeroq3a_nex_r4 hydroxon-r2 ikzdm1_q3 imprisoned-final_r3 inverted_lostspace2 jasm kaznexdm1 klzegypt_q3 knivesdm1_q3 kondm7_q3 lavaflag lethargy_lg lets_drink_beer librarylps_wop lightspeed limbo littlemexico_v1r2 loo lostspace2 lostworld_ql luminar lun3dm4_nex_r1 lutz_v1 man0man epsilon-b5 everything_else_is_green_v1r0 limbo revrem stone_sea mars mental-gap-beta4 mentalrespacedv2 minideck_v4r4 mint mint mmkitch_v1r3 monsoon_q3 monstrosity_a6 morpheusx newtonian-nightmare nexball_succer_socks_v1r3 nexdance nexspace_v1r2 notme old-steel-complex overlord_vehicles padshop_wop paris_v2_ut peasants_palace phrantic powerstation_r2 pukka3tourney2 pushmectf q2edge-jb-beta9 quarantine_ql quark_v4 qzdm6_q3 railorfail breathium recratemini red-planet_xon red_v3 reddm6_q3 reduced_fat_wheat_thins_xon resist-desaturation reslimed revdm1 revdm3 revdm3pro revving riyadh_mod_bots_ut riyadhv1_fix_ut rom rommel-classic_ut rota3dm2 ruinerx rush rusher_cpm1 rusty_r3 sanctum_q3 sewers_v2r3 silvercity-reloaded silvercity_xon sinister_full_r1_q3 skytower slimepipe6 sokar3dm3_q3 soylent soylent_destroyed soylentdeath1 space_garbage_1-1 spaceapple-v2 spacecross_b1 spaceprison spirecontrol6 starship station-x stone_ocean stone_sea straledm5 strength styrofoam_fixed syntheticv1 tempullit the_dome_v1r3 thehighestground tower_of_babel_a3 toxic_fabric original_toxicity toxicity trance trident trinity_full_q3 tuhma vertical_map_suck vinegar_v3 vmmm voll_aufs_maul_v4 warehouse_xon wdf_q3 weirdcube_v2 xairwalker xon_deeppit_finally_a1 yog3dm1_q3 zastavka_eac1 ztn3tourney1_q3 sanctum"
+
+g_maplist_shufflenow
+sv_curl_defaulturl "http://xonotic.us.to/xonotic/"
+sv_maxrate 1000000
+//sys_ticrate 0.0242424
+#sys_ticrate 0.0166667
+gametype dm
+fraglimit 30
+g_maxplayers 0
+maxplayers 16
+sv_vote_gametype 1
+sv_vote_gametype_options "dm ctf ca lms tdm ft kh ka on mh"
+#sv_weaponstats_file "http://www.xonotic.org/weaponbalance/"
+
+g_maplist_votable 12
+#g_maplist_shuffle 1
+#g_maplist_votable_abstain 1
+#g_maplist_votable_nodetail 0
+
+timelimit_override 40
+g_norecoil 1
+g_shootfromeye 1
+
+
+alias sv_hook_gamestart_all "defer 12 \"say ^2Matrix and Discord community: ^3https://xonotic.org/chat/\"; defer 14 \"say ^2Next stage of xonotic championship will start soon! See ^3https://rocketjump.zone ^2for more info\""
+
+
+exec "secret.cfg" // contains just rcon_password
+sv_motd "\nWelcome to ⚡⚡ Extreme Voltage ⚡⚡ regular server\n\nVisit http://xonotic.us.to/ for full server config with pk3 files.\n\nVisit http://extreme.voltage.nz for our clan page.\n\nVisit https://gitlab.com/xonotic/xonotic/-/wikis/Freesh-Meat-Mod for Fresh Meat Mod" 

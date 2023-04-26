@@ -1,0 +1,12 @@
+[user]
+	email = server@nomail.com
+	name = Xonotic Server
+[http]
+	postBuffer = 157286400
+[core] 
+packedGitLimit = 512m 
+packedGitWindowSize = 512m 
+[pack] 
+deltaCacheSize = 2047m 
+packSizeLimit = 2047m 
+	windowMemory = 4096m

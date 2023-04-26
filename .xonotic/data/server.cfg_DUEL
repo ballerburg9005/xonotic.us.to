@@ -1,0 +1,67 @@
+sv_public 1
+hostname "⚡⚡ Extreme Voltage ⚡⚡ - DUEL & TDM"
+//g_maplist "revdm3pro curse_v2 spaceapple bloodrun quark toxic_fabric deck_v2 romi stone_sea revolter limbo tuhma revrem thehighestground epsilon-b5 resist-desaturation Fjo3tourney2_nex_r1 79drgc2 Bal3dm4_nex_r1 CMP1-dm6 acid3dm5 af3hex aggressor_remix ame7q3dm3 ascension bal3dm5 bloodyrun chiropteradm_nex_r1"
+g_maplist "cubes-x03-r02_melano1 dsi geo-core hub3aeroq3a_nex_r1 kaznexdm1 lightspeed lun3dm4_nex_r1 epsilon-b5 peasants_palace quark_v4 revdm3pro thehighestground tuhma         acid3dm10_q3 afterslime aggressorx_wz_04 bloodrun_a3 boil_b4 bloodprison_xon_r2 charon3dm13 crescent_q3 cpm1a cpm7 cpm10_nex_r1 cpm15 cpm16_nex_r1 cpm17 cpm24_nex_r1 cpm29_nex_r1 cucumber_v2 darkzone downer_final_r1 drain finalrage fuse hub3aeroq3a_nex_r4 imprisoned-final_r3 lostworld_ql luminar map-everything_else_is_green_v1r0 mint_r1  monsoon_q3 opium_v4 pukka3tourney2 rota3dm2 ruinerx runningman solarium silentsiege stormkeep syntheticv1 toxicity warfare xoylent bloodyrun xairwalker tempullit"
+//g_maplist_shufflenow
+sv_curl_defaulturl "http://vps-93234b88.vps.ovh.net/xonotic/"
+sv_maxrate 1000000
+//sys_ticrate 0.0242424
+#sys_ticrate 0.0166667
+gametype duel
+fraglimit 0
+g_maxplayers 2
+maxplayers 16
+g_warmup 1
+
+g_maplist_votable 28
+g_maplist_shuffle 1
+g_maplist_votable_abstain 1
+g_maplist_votable_nodetail 0
+
+g_balance_machinegun_weaponreplace "arc"
+
+g_maplist_allow_hidden 1
+g_maplist_votable_keeptwotime 27
+
+sv_vote_gametype 1
+sv_vote_gametype_options "duel tdm"
+
+timelimit_override 10
+
+alias team_vote "sv_vote_commands \"lockteams unlockteams restart fraglimit chmap gotomap nextmap endmatch reducematchtime extendmatchtime allready kick cointoss movetoauto"\"
+alias ffa_vote "sv_vote_commands \"restart fraglimit chmap gotomap nextmap endmatch reducematchtime extendmatchtime allready kick cointoss movetoauto shuffleteams movetospec"\"
+ffa_vote
+
+g_warmup_majority_factor 0.5
+
+#sv_weaponstats_file "http://www.xonotic.org/weaponbalance/"
+
+exec balance-xpm.cfg
+
+exec server_gametype_hooks.cfg
+
+g_powerups 0
+g_powerups_drop_ondeath 1
+
+g_balance_machinegun_weaponreplace "arc"
+
+sv_ready_restart_after_countdown 1
+
+// Shooting alterations
+g_norecoil 1
+g_shootfromeye 1
+
+// Respawning rules
+g_spawnshieldtime 0.2
+g_forced_respawn 1
+g_spawn_furthest 0.8
+sv_ready_restart_after_countdown 0
+
+g_tdm_point_limit -1
+g_tdm_point_leadlimit -1
+timelimit_overtimes 0
+
+exec "secret.cfg" // contains just rcon_password
+sv_motd "\nWelcome to ⚡⚡ Extreme Voltage ⚡⚡ duel & tdm\n\nVisit http://xonotic.us.to/ for full server config with pk3 files.\n\nVisit http://extreme.voltage.nz for our clan page."
+Give feedback
+

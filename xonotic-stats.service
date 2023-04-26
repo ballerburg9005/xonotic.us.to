@@ -1,0 +1,19 @@
+[Unit]
+Description=Xonotic
+After=network.target
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+WorkingDirectory=/home/xonotic/www/
+ExecStart=/bin/sh -c 'while true; do echo "`date +%%s`;`vmstat -s | grep \"stolen cpu ticks\" | grep -osa \"[0-9]*\"`;`uptime | sed -nE \"s/.*load average:[[:space:]]*([^,]*).*/\1/p\"`" >> /home/xonotic/www/stats-`hostname`.csv; sleep 60; done'
+User=xonotic
+Type=exec
+
+Restart=always
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target 
+

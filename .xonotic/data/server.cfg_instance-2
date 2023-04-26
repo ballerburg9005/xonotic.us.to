@@ -1,0 +1,32 @@
+sv_public 1
+hostname "⚡⚡ Extreme Voltage ⚡⚡ - Ampere/ARM Oracle Cloud"
+//g_maplist "revdm3pro"
+
+g_maplist_shufflenow
+sv_curl_defaulturl "http://193.122.48.73/xonotic/"
+sv_maxrate 1000000
+//sys_ticrate 0.0242424
+#sys_ticrate 0.0166667
+gametype dm
+fraglimit 30
+g_maxplayers 0
+maxplayers 32
+sv_vote_gametype 1
+sv_vote_gametype_options "dm ctf ca lms tdm ft kh ka on mh"
+#sv_weaponstats_file "http://www.xonotic.org/weaponbalance/"
+
+g_maplist_votable 12
+#g_maplist_shuffle 1
+#g_maplist_votable_abstain 1
+#g_maplist_votable_nodetail 0
+
+timelimit_override 10
+g_norecoil 1
+g_shootfromeye 1
+
+//exec server_gametype_hooks.cfg
+
+alias sv_hook_gamestart_all "defer 12 \"say ^2Matrix and Discord community: ^3https://xonotic.org/chat/\"; defer 14 \"say ^2Next stage of xonotic championship will start soon! See ^3https://rocketjump.zone ^2for more info\""
+
+exec "secret.cfg" // contains just rcon_password
+sv_motd "\nAmpere/ARM server 'Forever Free' ($0) with no hidden cost. Playtested and approved your #1 server. It is mega beefy and smooth: 24GB RAM, 4 dedicated cores, 600Mbit.\n\nContact us on Matrix, or official Xonotic Discord if you have wishes or observe abnormal behavior.\n\nForum: https://forums.xonotic.org/showthread.php?tid=9619\n\nDiscord:https://discord.gg/ZNUJ6y73 (Ballerburg)\n\nMatrix: https://matrix.to/#/#space:xonotic.org\n\nbrought to you by Extreme Voltage clan\nhttp://extreme.voltage.nz\n\nFull server backup and instructions: http://xonotic.us.to\n\n"
