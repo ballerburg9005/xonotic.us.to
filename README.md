@@ -139,7 +139,7 @@ Troubleshooting
 Disable firewall or selinux:
 ```
 iptables -I INPUT -j ACCEPT
-setenforce 0
+setenforce 0 # you might need to saet SELINUX=disabled in /etc/selinux/config and reboot
 ```
 <br><p> 
 
