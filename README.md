@@ -110,7 +110,6 @@ systemctl enable xonotic lighttpd xonotic-stats
 systemctl start lighttpd xonotic xonotic-stats
 systemctl restart lighttpd
 
-cp /home/xonotic/.zshrc ~/
 ```
 <br><p>
 
