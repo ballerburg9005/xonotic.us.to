@@ -140,7 +140,7 @@ Troubleshooting
 Disable firewall or selinux:
 ```
 iptables -I INPUT -j ACCEPT
-echo 0 > /selinux/enforce
+setenforce 0
 ```
 <br><p> 
 
