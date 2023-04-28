@@ -9,7 +9,7 @@ My server also displays those instructions on http://xonotic.us.to .
 
 <br>
 
-*Check out [Oracle Cloud Forever Free Tier](https://www.youtube.com/watch?v=_m21FxvuQ4c)! You get 4 super beefy dedicated Ampere/ARM cores with 24GB RAM on a 600Mbit connection in an undercrowded ARM-exclusive datacenter for $0 (no hidden cost!). After lots of playstesting, everything checks out A+++ . Supports more than 32 players on only one core. Sounds unbelievable, but true. Don't pick the x86 option, it sometimes sucks really bad especially on weekends. Make sure upon registration to pick a "region" with a [large (maybe with Azure) datacenter](https://www.oracle.com/cloud/public-cloud-regions/), because some regions don't have ARM and right now you can't change region afterwards (I picked Germany/NRW/Frankfurt).*
+*Check out [Oracle Cloud Forever Free Tier](https://www.youtube.com/watch?v=_m21FxvuQ4c)! You get 4 super beefy dedicated Ampere/ARM cores with 24GB RAM on a 600Mbit connection in an undercrowded ARM-exclusive datacenter for $0 (no hidden cost!). After lots of playstesting, everything checks out A+++ . Supports more than 32 players on only one core. Sounds unbelievable, but true. Don't pick the x86 option, it sometimes sucks really bad especially on weekends. Make sure upon registration to pick a "region" with a [large (maybe with Azure) datacenter](https://www.oracle.com/cloud/public-cloud-regions/), because some regions don't have ARM and right now you can't change region afterwards (I picked Germany/NRW/Frankfurt). Hint: In Oracle Control Center, you need to go to Networking -> Virtual cloud networks -> vcn -> Security List Details -> Ingress Rules to switch off external Firewall.*
 
 
 <p><br>
