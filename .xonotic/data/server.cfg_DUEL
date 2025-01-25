@@ -1,9 +1,7 @@
 sv_public 1
-hostname "⚡⚡ Extreme Voltage ⚡⚡ - DUEL & TDM"
-//g_maplist "revdm3pro curse_v2 spaceapple bloodrun quark toxic_fabric deck_v2 romi stone_sea revolter limbo tuhma revrem thehighestground epsilon-b5 resist-desaturation Fjo3tourney2_nex_r1 79drgc2 Bal3dm4_nex_r1 CMP1-dm6 acid3dm5 af3hex aggressor_remix ame7q3dm3 ascension bal3dm5 bloodyrun chiropteradm_nex_r1"
-g_maplist "cubes-x03-r02_melano1 dsi geo-core hub3aeroq3a_nex_r1 kaznexdm1 lightspeed lun3dm4_nex_r1 epsilon-b5 peasants_palace quark_v4 revdm3pro thehighestground tuhma         acid3dm10_q3 afterslime aggressorx_wz_04 bloodrun_a3 boil_b4 bloodprison_xon_r2 charon3dm13 crescent_q3 cpm1a cpm7 cpm10_nex_r1 cpm15 cpm16_nex_r1 cpm17 cpm24_nex_r1 cpm29_nex_r1 cucumber_v2 darkzone downer_final_r1 drain finalrage fuse hub3aeroq3a_nex_r4 imprisoned-final_r3 lostworld_ql luminar map-everything_else_is_green_v1r0 mint_r1  monsoon_q3 opium_v4 pukka3tourney2 rota3dm2 ruinerx runningman solarium silentsiege stormkeep syntheticv1 toxicity warfare xoylent bloodyrun xairwalker tempullit"
-//g_maplist_shufflenow
-sv_curl_defaulturl "http://vps-93234b88.vps.ovh.net/xonotic/"
+hostname "⚡⚡ Extreme Voltage ⚡⚡ - DUEL & TDM [DE,Frankfurt]"
+
+sv_curl_defaulturl "http://xonotic-duel.us.to/xonotic/"
 sv_maxrate 1000000
 //sys_ticrate 0.0242424
 #sys_ticrate 0.0166667
@@ -13,12 +11,37 @@ g_maxplayers 2
 maxplayers 16
 g_warmup 1
 
-g_maplist_votable 28
+//g_maplist "revdm3pro curse_v2 spaceapple bloodrun quark toxic_fabric deck_v2 romi stone_sea revolter limbo tuhma revrem thehighestground epsilon-b5 resist-desaturation Fjo3tourney2_nex_r1 79drgc2 Bal3dm4_nex_r1 CMP1-dm6 acid3dm5 af3hex aggressor_remix ame7q3dm3 ascension bal3dm5 bloodyrun chiropteradm_nex_r1"
+#g_maplist "cubes-x03-r02_melano1 dsi geo-core hub3aeroq3a_nex_r1 kaznexdm1 lightspeed lun3dm4_nex_r1 epsilon-b5 peasants_palace quark_v4 revdm3pro thehighestground tuhma         acid3dm10_q3 afterslime aggressorx_wz_04 bloodrun_a3 boil_b4 bloodprison_xon_r2 charon3dm13 crescent_q3 cpm1a cpm7 cpm10_nex_r1 cpm15 cpm16_nex_r1 cpm17 cpm24_nex_r1 cpm29_nex_r1 cucumber_v2 darkzone downer_final_r1 drain finalrage fuse hub3aeroq3a_nex_r4 imprisoned-final_r3 lostworld_ql luminar map-everything_else_is_green_v1r0 mint_r1  monsoon_q3 opium_v4 pukka3tourney2 rota3dm2 ruinerx runningman solarium silentsiege stormkeep syntheticv1 toxicity warfare xoylent bloodyrun xairwalker tempullit canal xowoken_b3_rjz1 bloodyrun_rjz2 fuse_rjz2 silentsiege_rjz2 sanctum_a8_rjz1 aerowalk_b2_fixed"
+
+
+g_maplist "aerowalk_b2 fuse_rjz2 vale_b8 silentsiege_rjz2 xowoken_b3 bloodyrun_rjz2 bloodcovenant_xon_r1 downer_final_r1 toxicity tuhma revdm3pro quark xoylent sanctum_a8_rjz1 finalrage darkzone stormkeep boil warfare phrantic"
+
+g_maplist_shufflenow
+g_maplist_votable 24
 g_maplist_shuffle 1
 g_maplist_votable_abstain 1
 g_maplist_votable_nodetail 0
-
+g_maplist_mostrecent_count 0
 g_balance_machinegun_weaponreplace "arc"
+
+g_pickup_nails 60 // 80
+g_pickup_nails_weapon 60 // 80
+g_pickup_nails_max 120 // 320
+g_pickup_rockets 32 // 40
+g_pickup_rockets_weapon 32 // 40
+g_pickup_rockets_max 90 // 160
+g_pickup_cells_max 90 // 180
+g_pickup_plasma_max 90 // 180
+
+// Arc
+g_balance_arc_beam_maxangle 0
+g_balance_arc_beam_range 768 // testing value
+g_balance_arc_beam_damage 110
+g_balance_arc_beam_force 650
+
+// MachineGun
+g_balance_machinegun_reload_ammo 0
 
 g_maplist_allow_hidden 1
 g_maplist_votable_keeptwotime 27
@@ -33,7 +56,7 @@ alias ffa_vote "sv_vote_commands \"restart fraglimit chmap gotomap nextmap endma
 ffa_vote
 
 g_warmup_majority_factor 0.5
-
+g_warmup_limit -1
 #sv_weaponstats_file "http://www.xonotic.org/weaponbalance/"
 
 exec balance-xpm.cfg
@@ -55,13 +78,12 @@ g_shootfromeye 1
 g_spawnshieldtime 0.2
 g_forced_respawn 1
 g_spawn_furthest 0.8
-sv_ready_restart_after_countdown 0
+sv_ready_restart_after_countdown 1
 
 g_tdm_point_limit -1
 g_tdm_point_leadlimit -1
 timelimit_overtimes 0
 
 exec "secret.cfg" // contains just rcon_password
-sv_motd "\nWelcome to ⚡⚡ Extreme Voltage ⚡⚡ duel & tdm\n\nVisit http://xonotic.us.to/ for full server config with pk3 files.\n\nVisit http://extreme.voltage.nz for our clan page."
-Give feedback
+sv_motd "\nWelcome to ⚡⚡ Extreme Voltage ⚡⚡ duel & tdm\n\nVisit http://xonotic.us.to/ for full server config with pk3 files.\n\nVisit http://extreme.voltage.nz for our clan page.\n\nNow migrated to the awesome Ampere ARM servers on Oracle Cloud!\n"
 
